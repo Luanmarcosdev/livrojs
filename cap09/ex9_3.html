@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/livrojs.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Exercício 9.3</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img src="img/ex9_3.jpg" alt="Melancia" class="img-fluid">
+            </div>
+            <div class="col-sm-8">
+                <h1>Qual é o peso da Melancia?</h1>
+                <form>
+                    <p><label for="inNome">Nome do Apostador:</label>
+                        <input type="text" id="inNome" class="form-control" required autofocus>
+                    </p>
+                    <p><label for="inPeso">Peso (em gramas):</label>
+                        <input type="number" id="inPeso" class="form-control" required step="0.01">
+                    </p>
+                    <p><input type="submit" value="Apostar" class="btn btn-primary">
+                        <input type="button" value="Vencedor" id="btVencedor" class="btn btn-warning">
+                        <input type="button" value="Limpar Apostas" id="btLimpar" class="btn btn-danger">
+                    </p>
+                </form>
+                <pre></pre>
+            </div>
+        </div>
+    </div>
+    <script src="./js/ex9_3.js"></script>
+</body>
+</html>

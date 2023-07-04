@@ -1,0 +1,15 @@
+<script>
+    function calcularMedia(...notas){ //recebe um conjunto de parametros que serao convertidos para um vetor
+        const tamanho = notas.length //notas é um array
+        if (tamanho == 0){
+            console.log("Informe no mínimo uma nota")
+            return
+        }
+        let soma = 0
+        for(const nota of notas){
+            soma+=nota
+        }
+        const media = soma / tamanho
+        console.log("Média: " + media.toFixed(1))
+    }
+</script>

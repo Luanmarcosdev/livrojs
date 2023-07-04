@@ -1,0 +1,14 @@
+<script>
+    
+    const anuncio = prompt('Digite o anúncio:')
+    
+    let numPalavras = 0
+    for(const palavra of anuncio){
+        if(palavra == " "){
+            numPalavras++
+        }
+    }
+
+    alert(`Anúncio: ${anuncio}\nContém ${numPalavras+1} palavras.`)
+
+</script>

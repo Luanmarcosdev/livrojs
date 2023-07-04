@@ -1,0 +1,16 @@
+<script>
+    let num // declara variavel num com let, pois ela ainda pode ser alterada
+            // e sera acessada fora do bloco do...while
+    do {  //cria laco de repeticao (faça...)
+        num = Number(prompt("Número: ")) //le um numero
+        if (num == 0 || isNaN(num)){     //se o numero é 0 ou nao é um numero
+            alert("Digite um número válido")
+        }
+    } while (num == 0 || isNaN(num)) // enquanto numero for 0 ou nao for um numero
+    
+    let pares = `Pares entre 1 e ${num}: `  //string que ira conter a resposta
+    for (let i=2; i < num; i += 2) {
+        pares += i + ","
+    }
+    alert(pares+num+".") //exibe lista dos numeros pares
+</script>

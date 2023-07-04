@@ -1,0 +1,13 @@
+<script>
+    const palavra = prompt('Palavra') //le a palavra
+    
+    const tamanho = palavra.length //obtem o tamanho
+    
+    let inverso = palavra.charAt(tamanho-1).toUpperCase() // transforma a ultima letra em maiuscula
+
+    for(i = tamanho - 2;i>=0; i--){ // laço sendo percorrido de trás para frente, sendo excluida a ultima letra, pois ela já foi "tratada"
+        inverso+=palavra.charAt(i).toLowerCase(i)//transformando a letra em minuscula
+    }
+    
+    alert(`Palavra: ${palavra}\nPalavra invertida: ${inverso}`)
+</script>

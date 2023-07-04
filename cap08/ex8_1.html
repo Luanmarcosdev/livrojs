@@ -1,0 +1,35 @@
+<script>
+
+    //1 opcao usando const e arrow funcion
+
+    // const situacao = (nota,media) => {
+    //     if(nota >= media){
+    //         alert("Aprovado")
+    //     } 
+    //     else{
+    //         alert("Reprovado")
+    //     }
+    // }
+
+    // const prova1 = Number(prompt("Digite a nota: "))
+    
+    // situacao(prova1, 7)
+
+
+    //2 opcao usando somente funcion (função de passagem de parametro)
+
+    function situacaoAluno(nota1,nota2,media){
+        if((nota1+nota2)/2>=media){
+            alert("Aprovado")
+        }
+        else{
+            alert("Reprovado")
+        }
+    }
+        const prova1 = Number(prompt("Digite a nota da primeira prova: "))
+        const prova2 = Number(prompt("Digite a nota da segunda prova: "))
+        const media = Number(prompt("Digite a nota da média para aprovação: "))
+
+        situacaoAluno(prova1, prova2, media)
+    
+</script>

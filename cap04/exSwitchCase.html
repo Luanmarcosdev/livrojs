@@ -1,0 +1,22 @@
+<script>
+    const bairro = prompt(`Digite o bairro de entrega: `)
+    let taxaDeEntrega 
+    switch (bairro.toUpperCase()) {
+        case "CENTRO":
+            taxaDeEntrega = 5
+            break
+        case "BONFIM":
+        case "SENHOR DOS MONTES":
+        case "TIJUCO":
+        case "BOM PASTOR":
+            taxaDeEntrega = 6
+            break
+        case "COLONIA":
+            taxaDeEntrega = 7
+            break
+        default:
+            taxaDeEntrega = 8
+            break;
+    }
+    alert(`A taxa de entrega para ${bairro.toUpperCase()} é ${taxaDeEntrega.toFixed(2)} `)
+</script>
